@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  
+<!-- Mirrored from cursed.tk/9/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Jan 2021 14:45:28 GMT -->
+<head>
+  
+      <meta charset="utf-8">
+      <meta name="robots" content="noodp">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	  
+      <title>ZXC DarKi</title>
+	  
+      <link rel="shortcut icon" href="favicon.ico">
+	  <link href="../../use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">	
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:300,400" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      
+  </head>
+
+  <body>
+
+      <div id="main">
+
+		  <div id="page-loader">
+			  <div class="spinner-container">
+				  <div class="css-spinner"></div>
+			  </div>
+		  </div>
+            
+		  <section id="hero" class="hero hero-1">
+
+			  <div class="front-content page-enter-animated">
+				<div class="controls show"><input style="width:100px;" class="volume-button input-range" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" type="range" id="vol-control" value="100" min="0" max="100" step="1"><i onclick="pMusic();" class="pause-button ti-control-pause"></i></div>
+			
+				  <div class="container-mid">
+				  
+					  <div class="cycle-wrapper">
+					  
+								<div id="cycle">
+									<div class="slide"><h1>ZXC DarKi</h1></div>
+								</div>
+						  
+								<div class="cycle-wrapper">
+								  <div id="cycle1">
+									  <a style="color:white;">you are listening to: </a><br>
+									  <a style="color:white;" target="_blank" href="https://soundcloud.com/kaitoshoma/anime-god-5">Kaito Shoma</a>
+								  </div>
+								</div>
+					  </div>
+				  </div>
+
+
+			  </div>
+
+			  <div class="background-content page-enter-animated">
+
+				  <div class="level-1">
+                  
+					  <div class="bg-overlay"></div>
+					  <div class="bg-pattern"></div>
+					  <div id="canvas"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
+					  
+				  </div>	
+
+			  </div>
+
+		  </section>
+
+		</div>
+		
+		<audio id="audio" preload autoplay loop> <source type="audio/mp3" src="3.mp3" media="(orientation:landscape)">
+		
+		<script type="text/javascript">
+		var vid = document.getElementById("audio"); 
+
+		function pMusic() { 
+			vid.paused ? vid.play() : vid.pause();
+		} 
+		window.SetVolume = function(val)
+		{
+			var player = document.getElementById('audio');
+			player.volume = val / 100;
+		}
+
+		var audio = document.querySelector('audio');
+		window.addEventListener('touchstart', function audioStart() {
+		  audio.play();
+		  this.removeEventListener('touchstart', audioStart);
+		});
+		</script>
+      <script type="text/javascript" src="assets/js/main.js"></script>  
+  </body>
+
+
+<!-- Mirrored from cursed.tk/9/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Jan 2021 14:45:31 GMT -->
+</html>
